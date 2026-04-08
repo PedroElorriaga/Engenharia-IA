@@ -57,8 +57,6 @@ Aqui listaremos o que fizemos e precisaremos fazer para atingir esse objetivo
     - Entender FUNCTION CALLING
     - aprender JSON MODE e STRUCTURED OUTPUTS
 
-- System Design para esse contexto [ ]
-
 - RAG (Retrieval Argumented Generation) e Vector databases [ ]
     - Pinecone
     - Chroma
@@ -78,3 +76,5 @@ Aqui listaremos o que fizemos e precisaremos fazer para atingir esse objetivo
 
 - Construir projetos reais
     - Ex: Contruir um RAG chat que possa responder sobre uma especifica area, Contrua um AI Agent como uma ferramenta
+
+- System Design para esse contexto [ ]

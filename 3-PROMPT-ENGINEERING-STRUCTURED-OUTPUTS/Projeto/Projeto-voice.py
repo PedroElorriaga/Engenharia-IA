@@ -68,7 +68,7 @@ result = structured_model.invoke(messages)
 
 print(result)
 
-if result.lista_compras is not None and len(result.lista_compras.itens) > 0:
+if result is not None and len(result.itens) > 0:
     print(result.itens[0].nome_produto)
 
 # PEDRINHO OLHAR DEPOIS
