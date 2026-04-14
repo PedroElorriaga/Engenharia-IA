@@ -1,0 +1,21 @@
+A Pedrinhos Company é uma startup brasileira de tecnologia fundada em 2018 por Pedro Alves em São Paulo. A empresa é especializada no desenvolvimento de soluções de inteligência artificial para pequenas e médias empresas. Desde sua fundação, a Pedrinhos Company cresceu para um time de 45 colaboradores distribuídos em três escritórios em São Paulo, Belo Horizonte e Recife.
+
+A missão da empresa é democratizar o acesso à tecnologia de IA, tornando-a acessível e fácil de usar para negócios que não podem bancar grandes soluções enterprise. A Pedrinhos Company acredita que toda empresa, independentemente do tamanho, merece ferramentas inteligentes para competir no mercado moderno.
+
+A Pedrinhos Company oferece três linhas principais de produtos: o PedroBot, um chatbot de atendimento ao cliente com IA; o PedroInsights, um painel de inteligência de negócios com análises preditivas; e o PedroSearch, um mecanismo de busca empresarial baseado em tecnologia RAG. Todos os produtos estão disponíveis via modelo de assinatura mensal.
+
+Os planos de preço dos produtos da Pedrinhos Company são divididos em três níveis. O plano Starter custa R$299 por mês e inclui até 3 usuários e funcionalidades básicas. O plano Professional custa R$799 por mês e suporta até 15 usuários com análises avançadas. O plano Enterprise tem preço personalizado e oferece usuários ilimitados, suporte dedicado e opção de implantação on-premise.
+
+O suporte ao cliente da Pedrinhos Company funciona de segunda a sexta-feira, das 8h às 18h (horário de Brasília). Clientes dos planos Professional e Enterprise também têm acesso a suporte prioritário via WhatsApp. O tempo médio de resposta para chamados é de 4 horas para usuários Starter e 1 hora para usuários Professional e Enterprise.
+
+A empresa possui uma política de reembolso rigorosa. Os clientes podem solicitar reembolso integral nos primeiros 30 dias de assinatura caso não estejam satisfeitos com o produto. Após 30 dias, reembolsos não são disponibilizados, mas o cliente pode cancelar a assinatura a qualquer momento e continuar utilizando o serviço até o fim do período de cobrança.
+
+A Pedrinhos Company possui parceria com provedores de nuvem como AWS e Google Cloud para garantir alta disponibilidade e escalabilidade dos seus produtos. A empresa garante um SLA de 99,9% de uptime para todos os planos pagos. As janelas de manutenção programada ocorrem todo domingo entre 2h e 4h (horário de Brasília) e são comunicadas com pelo menos 48 horas de antecedência por e-mail.
+
+Os benefícios para colaboradores da Pedrinhos Company incluem plano de saúde, vale-refeição, auxílio home office de R$150 por mês e um orçamento anual de R$2.000 por colaborador para cursos, livros e conferências. A empresa também oferece horário flexível e política de trabalho 100% remoto para a maioria dos cargos.
+
+Os valores fundamentais da Pedrinhos Company são inovação, transparência, obsessão pelo cliente e aprendizado contínuo. Todos os novos colaboradores passam por um programa de onboarding de 2 semanas que abrange os produtos, a cultura e os processos internos da empresa. As avaliações de desempenho são realizadas duas vezes ao ano, em junho e dezembro.
+
+Em 2025, a Pedrinhos Company foi reconhecida como uma das 10 startups mais inovadoras do Brasil pela revista TechBrasil. A empresa captou R$12 milhões em uma rodada Série A liderada pelo Fundo Inovação Brasil, que será utilizada para expandir o time e lançar o PedroSearch internacionalmente em 2026.
+
+A empresa foi fundada em 2002 quando o pedrinho nasceu
