@@ -43,3 +43,27 @@ A distancia entre vetores é calculada por Cosine Similarity
 0.0 -> Vetores perpendiculares (sem relação)
 -1.0 -> Vetores opostos
 ```
+
+### Chunking
+A estrategia de como você corta o documento antes de armazenar. Mas temos que ter atenção nos seguintes pontos:
+
+- Chunk muito grande -> Pode ultrapassar o limite de tokens do LLM
+- Chunk muito pequeno -> Pode perder o contexto e a relação entre as informações (Ex: cortar um parágrafo em frases)
+
+Regra de ouro: Tente manter o chunk entre 256 a 512 tokens, com 20% de overlap
+
+
+### Bancos Vetoriais
+
+**Pinecone** é obanco vetorial mais usado em produção. É um serviço gerenciado na nuvem, apenas usamos API
+
+**ChromaDB** é um banco de dados vetorial open-source favorito para desenvolvimento local, fácil de usar e configurar, mas não é recomendado para produção
+
+OBS: Ao desenvolver um projeto, tive um duvida. O Chroma DB retorna a distancia de cosseno e acabei confundindo com a similaridade de cosseno
+
+```
+    Similaridade | Distancia
+    1.0          |      0.0
+    0.0          |      1.0
+    -1.0         |      2.0
+```
