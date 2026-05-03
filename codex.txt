@@ -1,1 +1,13 @@
 curl -X POST "http://localhost:8000/query" -H "Content-Type: application/json" -d "{\"query\" : \"Founded\"}"
+
+
+Uma sequencia de eu sigo normalmente nestes contextos
+
+
+Instancia o llm 
+
+faz um prompt
+
+cria uma chain
+
+invoka

@@ -17,6 +17,7 @@ Para marcar como concluido, ao menos um projeto do assunto
 - DDD (Entender o real uso dele e porque) [ ]
 - Evitar Race Conditions [ ]
 - Como fazer POCS/MCPS [ ]
+- Observabilidade (Logs, Metrics, Tracing) [ ]
 
 Lembre-se, ja vimos diversos desses conceitos, mas agora queremos realmente nos tornar fora da curva
 Não precisamos tentar provar nada a ninguem, é o Pedrinho pelo Pedrinho
@@ -31,6 +32,14 @@ Não precisamos tentar provar nada a ninguem, é o Pedrinho pelo Pedrinho
 - Sede por querer sempre evoluir
 
 Obviamente não somos uma máquina para aprender tudo, há coisas que ficaram só no básico e ta tudo bem
+
+
+### Key problems 
+
+- Double Spend / Double Submit
+- Race Conditions
+- Idempotency
+- Consistency
 
 ---
 
@@ -57,7 +66,7 @@ Aqui listaremos o que fizemos e precisaremos fazer para atingir esse objetivo
     - Entender FUNCTION CALLING
     - aprender JSON MODE e STRUCTURED OUTPUTS
 
-- RAG (Retrieval Argumented Generation) e Vector databases [ ]
+- RAG (Retrieval Argumented Generation) e Vector databases [✅]
     - Pinecone
     - Chroma
 
