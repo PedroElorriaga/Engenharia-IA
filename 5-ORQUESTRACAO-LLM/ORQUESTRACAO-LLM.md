@@ -55,3 +55,19 @@ Conditional chain a -> se x faz b -> senão faz c (multistage-conditional.py)
 ```
 
 Em parallel chain executamos dois ou mais processos simultaneamente, sendo mais rapido que sequential chain
+
+E quando usar cada um ?
+
+- Serie, etapas que dependem uma da outra
+
+- Paralelo, analises independentes da mesma entrada
+
+- Condicional, diferentes inputs que precisam de tratamentos diferentes
+
+
+### LangGraph
+O LangGraph é uma biblioteca de orquestração de LLMs que permite criar grafos de processamento, onde cada node é uma função que pode ser um LLM, um parser, ou qualquer outra função Python. Ele suporta diferentes tipos de grafos, como sequenciais, paralelos e condicionais, e também tem suporte para retries e monitoramento.
+
+- Nodes: Funções que executam uma ação, podem chamar uma LLM ou só rodar uma função Python
+
+- Edges: Determinam qual node sera executado em seguida. Podem ser condicionais, apontando para diferentes nodes dependendo de uma condição
