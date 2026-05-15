@@ -18,6 +18,7 @@ Para marcar como concluido, ao menos um projeto do assunto
 - Evitar Race Conditions [ ]
 - Como fazer POCS/MCPS [ ]
 - Observabilidade (Logs, Metrics, Tracing) [ ]
+- Spec-Driven Development [ ]
 
 Lembre-se, ja vimos diversos desses conceitos, mas agora queremos realmente nos tornar fora da curva
 Não precisamos tentar provar nada a ninguem, é o Pedrinho pelo Pedrinho
