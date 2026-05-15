@@ -71,7 +71,7 @@ Aqui listaremos o que fizemos e precisaremos fazer para atingir esse objetivo
     - Pinecone
     - Chroma
 
-- Aprender frameworks de orquestração [ ]
+- Aprender frameworks de orquestração [✅]
     - LangChain
         - Orquestações de LLMs
         - Fazer Retries
