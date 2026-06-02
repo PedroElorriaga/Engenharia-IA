@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from rich import print
 from langsmith import Client
 from rag.ingest import ingest
-from redis_util.redis_client import get_redis_client
+from redis_util.redis_client import SemanticCache
 from utils.rate_limiting import RateLimiter
 
 load_dotenv()
@@ -18,7 +18,7 @@ class Agent:
         self.messages = []
         self.collection = ingest()
         self.smith_client = Client()
-        self.redis_client = get_redis_client()
+        self.redis_client = SemanticCache(threshold=0.85, ttl=60)
         self.rate_limit = RateLimiter()
 
     def __llm_connection(self) -> ChatGoogleGenerativeAI:
@@ -62,7 +62,7 @@ class Agent:
         self.__save_message(llm_response)
 
         self.redis_client.set(
-            query, self.messages[-1].content[-1].get("text"), ex=60)
+            query, self.messages[-1].content[-1].get("text"))
 
         return self.messages[-1].content[-1].get("text")
 
@@ -73,7 +73,7 @@ if __name__ == "__main__":
     response_cached = agent.query("Como funciona o banco de horas")
     print("response:", response)
     print("response_cached:", response_cached)
-    agent.query("Como funciona o banco de horas")
-    agent.query("Como funciona o banco de horas")
-    agent.query("Como funciona o banco de horas")
+    agent.query("Como funciona o banco de horas?")
+    agent.query("Informacoes sobre banco de horas")
+    agent.query("como funciona o banco de horas na pedrinhos?")
     agent.query("Como funciona o banco de horas")
