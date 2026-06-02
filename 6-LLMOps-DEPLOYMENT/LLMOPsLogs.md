@@ -36,3 +36,34 @@ Com o LangSmith, é possível visualizar as interações em um dashboard, analis
 - Erros: Taxa de erros por tipo (Detectar falhas, saude do sistema)
 - Qualidade: Feedback dos usuários, ou métricas de avaliação (model drift, satisfação do usuário)
 - Cache hit rate: Taxa de acertos no cache (Otimizar performance e custos)
+
+
+### Versionamento de Prompts
+Usado para controlar as mudanças nos prompts, e garantir que as mudanças não quebrem o sistema. O LangSmith permite salvar e versionar os prompts, e recuperar versões anteriores quando necessário.
+
+```
+Criou/editou prompt
+        ↓
+  client.push_prompt()   →   LangSmith salva nova versão
+        ↓
+  client.pull_prompt()   →   Seu código usa o prompt versionado
+```
+
+
+### Visão geral de LLMOps
+
+```
+Usuário faz uma pergunta
+        ↓
+[Rate Limiter] → Bloqueado? → Retorna 429
+        ↓ Permitido
+[Cache] → Hit? → Retorna resposta instantânea
+        ↓ Miss
+[LLM Pipeline] → Executa RAG / Agent / Chain
+        ↓
+[Monitoramento] → Registra latência, tokens, custo
+        ↓
+[Cache] ← Salva resposta para próxima vez
+        ↓
+Resposta entregue ao usuário
+```
