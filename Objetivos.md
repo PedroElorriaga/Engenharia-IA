@@ -78,13 +78,13 @@ Aqui listaremos o que fizemos e precisaremos fazer para atingir esse objetivo
         - Ter processos muilti-stage
         - Ter diferentes LLMs chat conversando entre elas
 
-- LLMOPS e Deployment [ ]
+- LLMOPS e Deployment [✅]
     - Entender RATE LIMITING
     - Entender CACHING
     - Monitoramento
     - Administração
 
-- Construir projetos reais
+- Construir projetos reais [✅]
     - Ex: Contruir um RAG chat que possa responder sobre uma especifica area, Contrua um AI Agent como uma ferramenta
 
 - System Design para esse contexto [ ]
