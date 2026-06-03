@@ -16,7 +16,7 @@ Para marcar como concluido, ao menos um projeto do assunto
 - Terraform (Entender mais, aplicar ao menos em um projeto) [ ]
 - DDD (Entender o real uso dele e porque) [ ]
 - Evitar Race Conditions [ ]
-- Como fazer POCS/MCPS [ ]
+- Como fazer POCS/MVP [✅]
 - Observabilidade (Logs, Metrics, Tracing) [ ]
 - Spec-Driven Development [ ]
 
