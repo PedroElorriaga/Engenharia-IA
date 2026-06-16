@@ -88,3 +88,13 @@ Aqui listaremos o que fizemos e precisaremos fazer para atingir esse objetivo
     - Ex: Contruir um RAG chat que possa responder sobre uma especifica area, Contrua um AI Agent como uma ferramenta
 
 - System Design para esse contexto [ ]
+
+
+New gaps
+
+1. Evals com RAGAS       → resolve o "como sei que meu RAG funciona?"
+2. AI Security           → diferencial enorme para bancos (LGPD)
+3. Human-in-the-loop     → LangGraph já está no repo, é um passo natural
+4. Advanced RAG          → reranking + hybrid search
+5. System Design de IA   → seu próprio objetivo pendente
+6. Fine-tuning           → mais longo prazo
