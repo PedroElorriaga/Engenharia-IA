@@ -1,3 +1,42 @@
+# ==============================================================================
+# Explicando os testes com minhas palavras (Exercício de fixação)
+#
+# A ideia geral dos testes aqui é validar o contrato da API sem precisar
+# do Ollama de verdade rodando. Para isso usamos "mocks" — objetos falsos
+# que imitam o comportamento do ChatOllama mas retornam respostas controladas.
+#
+# _FAKE_ANSWER: é a resposta falsa que o mock vai retornar. Assim sabemos
+# exatamente o que esperar no payload de resposta.
+#
+# _make_llm_mock(): fabrica um ChatOllama falso. Criamos dois MagicMocks:
+#   - mock_response: imita o objeto retornado pelo .invoke(), com um .content
+#   - mock_llm: imita o próprio ChatOllama, onde .invoke() devolve o mock_response
+#
+# @patch("main.ChatOllama"): esse decorator intercepta a criação do ChatOllama
+# dentro do main.py e substitui pela nossa versão falsa durante o teste.
+# Assim o teste não precisa de internet, nem do Ollama instalado.
+#
+# Teste 1 - test_ask_returns_expected_payload:
+#   Verifica que ao fazer um POST /ask com uma pergunta simples:
+#   - o status code é 200
+#   - o payload contém os três campos: answer, latency_ms e model
+#   - cada campo tem o tipo correto (str, int, str)
+#   - o answer não está vazio
+#   - o latency_ms é >= 0 (nunca negativo)
+#
+# Teste 2 - test_ask_with_history:
+#   Verifica que o endpoint aceita o campo history corretamente.
+#   Passamos um histórico de conversa anterior (user + assistant) junto com
+#   a nova pergunta. Confirmamos que a resposta ainda é o _FAKE_ANSWER,
+#   ou seja, a history foi aceita sem quebrar nada.
+#
+# Teste 3 - test_ask_502_on_model_error:
+#   Simula uma falha real do Ollama (ex: serviço fora do ar).
+#   Fazemos o mock_llm.invoke() lançar um RuntimeError.
+#   Esperamos que a API capture esse erro e devolva HTTP 502 (Bad Gateway),
+#   que é o código correto para "o serviço de terceiro falhou".
+# ==============================================================================
+
 from main import app
 from fastapi.testclient import TestClient
 import sys
