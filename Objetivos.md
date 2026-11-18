@@ -98,3 +98,33 @@ New gaps
 4. Advanced RAG          → reranking + hybrid search
 5. System Design de IA   → seu próprio objetivo pendente
 6. Fine-tuning           → mais longo prazo
+
+Evals (1 a 2 semanas).
+  Golden dataset de 50 a 100 perguntas com resposta esperada.
+  RAGAS (faithfulness, context precision/recall) e um LLM-as-judge com rubrica.
+  Rodando no GitHub Actions e bloqueando o merge se a métrica cair. Esse é o artefato que responde a pergunta 1.
+  
+Observabilidade (1 semana).
+  Langfuse ou Phoenix (ambos têm opção self-hosted) com um trace por requisição.
+  Custo, tokens, latência e versão do prompt em cada span.
+  Um dashboard com custo por requisição e p95.
+  Isso fecha uma pendência do seu checklist (logs, metrics, tracing) e responde a pergunta 3.
+  
+Custo e roteamento (1 semana).
+  Com eval e tracing prontos, você consegue comparar modelos de verdade: roda o mesmo dataset em um modelo de fronteira e em um menor, e compara qualidade, custo e latência.
+  Depois implementa um roteador simples (classificador de complexidade e fallback pro modelo maior).
+  Adicione prompt caching e cache semântico no Redis, que você já sabe usar.
+  Você sai com uma tabela de números reais, que vale mais que qualquer resposta teórica na entrevista (perguntas 2 e 4).
+  
+Advanced RAG. Hybrid search (BM25 mais vetor) e reranking, medindo o ganho no seu próprio eval. Assim você prova que a melhoria funcionou em vez de só afirmar.
+
+Segurança e governança, o seu diferencial para banco.
+  Mascaramento de PII (CPF, cartão) antes de enviar ao LLM.
+  Defesa contra prompt injection.
+  Log de auditoria.
+  Human-in-the-loop com LangGraph para ações sensíveis.
+  Citar LGPD aqui faz diferença em vaga bancária.
+  
+Fundamentos de backend que bancos cobram. Seus “Key problems” (idempotência, race conditions, double submit) são o que realmente separa candidato em banco. Sugestão: a mesma API FastAPI do capstone ganha uma fila (RabbitMQ ou SQS), chaves de idempotência e testes de concorrência. Isso mata vários itens do seu checklist num projeto só e conecta IA com a engenharia de software que a vaga pede.
+
+Deploy. Dockerize, suba na AWS (EC2 ou ECS, S3, SQS) e, se der, descreva a infra com Terraform. Kubernetes eu deixaria por último: é cobrado em vagas, mas dificilmente é eliminatório para quem está entrando.
