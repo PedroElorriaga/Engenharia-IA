@@ -1,0 +1,4 @@
+evals/results/
+evals/human_labels_template.jsonl
+evals/synthetic_candidates.jsonl
+__pycache__/
